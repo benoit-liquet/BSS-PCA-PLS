@@ -342,7 +342,7 @@ p1 <- plotIndiv(myPCA,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](../Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-23-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-23-1.png)
 
 ``` r
 p2 <- plotIndiv(pca.full,
@@ -357,23 +357,4 @@ p2 <- plotIndiv(pca.full,
 
 ![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-24-1.png)
 
--   For saving the plot and ploting side by side
 
-``` r
-#library(ggpubr)
-#ggarrange(c(p1$graph,p2$graph),ncol=2,nrow=1,common.legend = TRUE)
-#pdf("../Latex/sample_plot.pdf",width = 12)
-#arrange <- ggarrange(p1$graph,p2$graph,ncol=2,nrow=1,common.legend = TRUE,legend="right")
-#ggsave("../Latex/sample_plot.png", arrange, width = 12, height = 6)
-#dev.off()
-par(mfrow=c(1,2))
-p1$graph
-```
-
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-25-1.png)
-
-``` r
-p2$graph
-```
-
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-25-2.png)
