@@ -342,7 +342,7 @@ p1 <- plotIndiv(myPCA,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-23-1.png)
+![](../Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-23-1.png)
 
 ``` r
 p2 <- plotIndiv(pca.full,
