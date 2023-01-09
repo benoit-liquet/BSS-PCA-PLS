@@ -35,7 +35,7 @@ pca.full <- pca(X.nipals, ncomp = 10, center = TRUE, scale = TRUE)
 plot(pca.full)
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-82-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-5-1.png)
 
 ``` r
 #pdf("../Latex/scree_plot.pdf",width=15)
@@ -152,7 +152,7 @@ result.CPEV1 <- plot.CPEV(cPCA.1,data=X,drop=drop)
 result.CPEV1$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-89-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 ``` r
 result.CPEV1$model.size
@@ -225,7 +225,7 @@ result.CPEV2 <- plot.CPEV(cPCA.2,data=X,drop=drop)
 result.CPEV2$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-93-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-16-1.png)
 
 ``` r
 model.size.PC2 <- result.CPEV2$model.size
@@ -290,7 +290,7 @@ result.CPEV3 <- plot.CPEV(cPCA.3,data=X,drop=drop)
 result.CPEV3$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-97-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-20-1.png)
 
 ``` r
 model.size.PC3 <- result.CPEV3$model.size
@@ -342,7 +342,7 @@ p1 <- plotIndiv(myPCA,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-100-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-23-1.png)
 
 ``` r
 p2 <- plotIndiv(pca.full,
@@ -355,7 +355,7 @@ p2 <- plotIndiv(pca.full,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-101-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-24-1.png)
 
 -   For saving the plot and ploting side by side
 
@@ -370,10 +370,10 @@ par(mfrow=c(1,2))
 p1$graph
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-102-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-25-1.png)
 
 ``` r
 p2$graph
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-102-2.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-25-2.png)
