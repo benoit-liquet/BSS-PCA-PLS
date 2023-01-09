@@ -25,7 +25,7 @@ library(xtable)
 
 ## Section 6.1 Illustration of Best Subset Selection for PCA
 
-- This analysis is presented [here](/Section6-1.md)
+- This analysis is presented [here](/Section_6.1/Vignette_PCA_COMBSS.md)
  
 
 ## Section 6.2 llustration of Best Subset Selection for PLS2 model
