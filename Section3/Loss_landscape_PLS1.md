@@ -13,7 +13,7 @@ X <- mvtnorm::rmvnorm(n,mean=c(1,1),sigma=matrix(c(3,1,1,2),ncol=2,nrow=2,byrow=
 Y <- X%*%matrix(beta,ncol=1)+rnorm(n,sd=1)
 ```
 
-## Loss and gradient path of BSS-PLS
+## Loss and gradient path for BSS-PLS1
 
 -   Lambda is 0
 
@@ -21,6 +21,7 @@ Y <- X%*%matrix(beta,ncol=1)+rnorm(n,sd=1)
 t0 <- rep(0.5,2)
 plot.landscape.path.BSS(lambda=0,t0=t0)
 ```
+
 
 -   Lambda is 150
 
