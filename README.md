@@ -24,7 +24,7 @@ library(xtable)
 
 ## Section 3.2 BSS for PLS model with univariate response
 
-We provide [here]() the code to illustrate the workings of our continuous optimization method for an example data with $p = 2$.
+We provide [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section3/Loss_landscape_PLS1.md) the code to illustrate the workings of our continuous optimization method for an example data with $p = 2$.
 
 
 
