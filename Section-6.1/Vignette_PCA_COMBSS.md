@@ -35,7 +35,7 @@ pca.full <- pca(X.nipals, ncomp = 10, center = TRUE, scale = TRUE)
 plot(pca.full)
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-41-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-18-1.png)
 
 ``` r
 #pdf("../Latex/scree_plot.pdf",width=15)
@@ -137,7 +137,7 @@ head(cPCA.1[,c(1,2,3,4,5)],20) -> tab
 plot.best.subset.PCA(result.cPCA,K=20,name.var = TRUE)
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-47-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-24-1.png)
 
 # Suggestion to choose the best subset size *k*:
 
@@ -162,7 +162,7 @@ result.CPEV1 <- plot.CPEV(cPCA.1,data=X,drop=drop)
 result.CPEV1$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-49-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-26-1.png)
 
 ``` r
 result.CPEV1$model.size
@@ -235,7 +235,7 @@ tab
 plot.best.subset.PCA(result.cPCA2,K=20,name.var = TRUE)
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-53-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-30-1.png)
 
 ## Choice best subset according drop in PEV
 
@@ -245,7 +245,7 @@ result.CPEV2 <- plot.CPEV(cPCA.2,data=X,drop=drop)
 result.CPEV2$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-54-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-31-1.png)
 
 ``` r
 model.size.PC2 <- result.CPEV2$model.size
@@ -308,7 +308,7 @@ tab
 plot.best.subset.PCA(result.cPCA3,K=20,name.var = TRUE)
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-58-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-35-1.png)
 
 ## Choice best subset according drop in PEV
 
@@ -318,7 +318,7 @@ result.CPEV3 <- plot.CPEV(cPCA.3,data=X,drop=drop)
 result.CPEV3$plot
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-59-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-36-1.png)
 
 ``` r
 model.size.PC3 <- result.CPEV3$model.size
@@ -370,7 +370,7 @@ p1 <- plotIndiv(myPCA,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-62-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-39-1.png)
 
 ``` r
 p2 <- plotIndiv(pca.full,
@@ -383,7 +383,7 @@ p2 <- plotIndiv(pca.full,
   size.axis = rel(1.5),cex=4,size.legend.title=rel(2))
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-63-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-40-1.png)
 
 -   For saving the plot and ploting side by side
 
@@ -398,10 +398,10 @@ par(mfrow=c(1,2))
 p1$graph
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-64-1.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-41-1.png)
 
 ``` r
 p2$graph
 ```
 
-![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-64-2.png)
+![](Vignette_PCA_COMBSS_files/figure-markdown_github/unnamed-chunk-41-2.png)
