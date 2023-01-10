@@ -21,7 +21,7 @@ Y <- X%*%matrix(beta,ncol=1)+rnorm(n,sd=1)
 t0 <- rep(0.5,2)
 plot.landscape.path.BSS(lambda=0,t0=t0)
 ```
-
+![](landscape_lam0.png)
 
 -   Lambda is 150
 
@@ -30,6 +30,7 @@ t0 <- rep(0.5,2)
 plot.landscape.path.BSS(lambda=150,t0=t0)
 #rgl.snapshot('landscape_lam150.png', fmt = 'png')
 ```
+![](landscape_lam150.png)
 
 -   Lambda is 450
 
@@ -38,3 +39,4 @@ t0 <- rep(0.5,2)
 plot.landscape.path.BSS(lambda=450,t0=t0)
 #rgl.snapshot('landscape_lam450.png', fmt = 'png')
 ```
+![](landscape_lam450.png)
