@@ -30,5 +30,5 @@ library(xtable)
 
 ## Section 6.2 Illustration of Best Subset Selection for PLS2 model
 
-- This analysis is presented [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-6.1/Vignette_PCA_COMBSS.md)
+- This analysis is presented [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-6.2/Vignette_PLS2_BSS.md)
 
