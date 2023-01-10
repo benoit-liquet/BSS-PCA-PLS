@@ -1,4 +1,4 @@
-# BSS-PCA-PLS: Best Subset Selection for PCA and PLS models
+# Best Subset Selection for PCA and PLS models
 
 Here we provide a comprehensible detailed vignette to run Best Subset Selection for PCA and PLS models
 
