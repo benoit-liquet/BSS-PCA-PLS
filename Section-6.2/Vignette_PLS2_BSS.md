@@ -1,4 +1,4 @@
-## Introduction
+# Best Subset Secetion for PLS2 on real data set 
 
 In this short vignette, we present an illustration of best subset
 selection for the PLS2 model. We use a freely available dataset from
