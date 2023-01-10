@@ -21,14 +21,19 @@ library(R.utils)
 library(fields)
 library(xtable)
 ```
+## Section 5 code for simualtion study
 
+    - section 5.2: effect of noise
+    - section 5.3: effect of sample size
+    - section 5.4: effect of the sparsity 
+    - section 5.5: effect of dimension $p$
 
 ## Section 6.1 Illustration of Best Subset Selection for PCA
 
 - This analysis is presented [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-6.1/Vignette_PCA_BSS.md)
  
 
-## Section 6.2 Illustration of Best Subset Selection for PLS2 model
+## Section 6.2 Illustration of Best Subset Selection for PLS2 
 
 - This analysis is presented [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-6.2/Vignette_PLS2_BSS.md)
 
