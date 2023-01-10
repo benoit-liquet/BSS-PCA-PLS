@@ -1,4 +1,4 @@
-## Introduction
+## Best Subset Selection for PCA on real data set 
 
 In this short vignette, we present an illustration of best subset
 selection for the PCA model. We use a freely available dataset from
