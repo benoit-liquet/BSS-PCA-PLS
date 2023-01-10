@@ -21,12 +21,12 @@ library(R.utils)
 library(fields)
 library(xtable)
 ```
-## Section 5 code for simualtion study
+## Section 5 code for simualtion study [here](https://github.com/benoit-liquet)
 
-    - section 5.2: effect of noise. [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_noise.R)
-    - section 5.3: effect of sample size [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_sample_size.R)
-    - section 5.4: effect of the sparsity [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_sparsity.R)
-    - section 5.5: effect of dimension $p$ [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_high_p.R)
+   - section 5.2: effect of noise [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_noise.R)
+   - section 5.3: effect of sample size [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_sample_size.R)
+   - section 5.4: effect of the sparsity [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_sparsity.R)
+   - section 5.5: effect of dimension $p$ [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_high_p.R)
 
 ## Section 6.1 Illustration of Best Subset Selection for PCA
 
