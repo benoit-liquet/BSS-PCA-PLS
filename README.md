@@ -21,7 +21,7 @@ library(R.utils)
 library(fields)
 library(xtable)
 ```
-## Section 5 code for simualtion study [here](https://github.com/benoit-liquet)
+## Section 5 code for simualtion study [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/)
 
    - section 5.2: effect of noise [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_noise.R)
    - section 5.3: effect of sample size [here](https://github.com/benoit-liquet/BSS-PCA-PLS/blob/main/Section-5/Comparison_sPLS_cPLS_TRUE_sample_size.R)
