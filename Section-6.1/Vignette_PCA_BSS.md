@@ -166,8 +166,8 @@ plot.best.subset.PCA(result.cPCA,K=20,name.var = TRUE)
 
 # Suggestion to choose the best subset size *k*:
 
-    -  Choice best subset according drop in PEV or
-    - \% of commun PEV between sparse Comp and non-sparse Comp
+    -  \% of commun PEV between sparse Comp and non-sparse Comp or
+    - Choice best subset according drop in PEV or
 
 -   Choice 1:
 
@@ -274,10 +274,12 @@ result.CPEV2$plot
 
 ``` r
 model.size.PC2 <- result.CPEV2$model.size
+model.size.PC2
 #pdf("../Latex/CPEV_plot2.pdf",width = 12)
 #result.CPEV2$plot
 #dev.off()
 ```
+    ## [1] 12
 
 -   Deflation step with subset= model.size.PC2
 
