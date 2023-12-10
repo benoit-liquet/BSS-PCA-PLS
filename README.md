@@ -1,4 +1,4 @@
-# Best Subset Selection for PCA and PLS models
+# Best Subset Solution Path for PCA and PLS models
 
 Here we provide a comprehensible detailed vignette to run Best Subset Selection for PCA and PLS models
 
@@ -6,7 +6,7 @@ We illustrate the usage of our approach on two real dataset: _multidrug_ and _eQ
 
 This vignette reproduces details result of our application section **Case Studies** from our submitted article:
 
-_Best Subset Selection for Principal Components Analysis and Partial Least Square models using Continuous Optimization_ B. Liquet, S. Moka and S. Muller. (2023).
+_Best Subset Solution Path for Principal Components Analysis and Partial Least Square models using Continuous Optimization_ B. Liquet, S. Moka and S. Muller. (2023).
 
 
 
