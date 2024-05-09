@@ -18,6 +18,8 @@ colnames(sens) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
 spe <- cbind(result$spe.spls,result$spe.bss)
 colnames(spe) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
 
+tabF1 <- cbind(result$F1.spls,result$F1.bss)
+colnames(tabF1) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
 
 
 MSEP <- matrix(c(MSE),ncol=1,nrow=400,byrow=F)
@@ -44,9 +46,18 @@ speplot <- ggplot(data.spe, aes(x=model, y=Specificity)) +
   labs(title=(TeX("noise: $\\sigma=1.5$")),x="")+
   theme_classic()+ theme(text = element_text(size = 17),axis.text.x = element_text(angle = -90))  
 
-ggarrange(MSEPplot, sens.plot,speplot,  ncol=3,nrow=1,common.legend = TRUE)
+F1<- matrix(c(tabF1),ncol=1,nrow=400,byrow=F)
+model <- rep(colnames(tabF1),each=100)
+data.F1 <- data.frame(F1,model)
+F1plot <- ggplot(data.F1, aes(x=model, y=F1)) + 
+  geom_boxplot(fill="gray")+
+  labs(title=(TeX("noise: $\\sigma=1.5$")),x="")+
+  theme_classic()+ theme(text = element_text(size = 17),axis.text.x = element_text(angle = -90))  
 
-ggsave("figsimu2newnoise1.5.pdf", width = 10, height = 5)
+
+ggarrange(MSEPplot,F1plot, sens.plot,speplot , ncol=4,nrow=1,common.legend = TRUE)
+
+ggsave("figsimu2newnoise1.5_F1.pdf", width = 10, height = 5)
 
 load("result_SIMU2new_noise3.Rdata")
 
@@ -60,6 +71,11 @@ colnames(sens) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
 spe <- cbind(result$spe.spls,result$spe.bss)
 colnames(spe) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
 
+tabF1 <- cbind(result$F1.spls,result$F1.bss)
+colnames(tabF1) <- c("spls(H=1)","spls(H=2)","BSS(H=1)","BSS(H=2)")
+
+
+
 MSEP <- matrix(c(MSE),ncol=1,nrow=400,byrow=F)
 model <- rep(colnames(MSE),each=100)
 data.MSE <- data.frame(MSEP,model)
@@ -85,8 +101,19 @@ speplot <- ggplot(data.spe, aes(x=model, y=Specificity)) +
   labs(title=(TeX("noise: $\\sigma=3$")),x="")+
   theme_classic()+ theme(text = element_text(size = 17),axis.text.x = element_text(angle = -90))  
 
-ggarrange(MSEPplot, sens.plot,speplot,  ncol=3,nrow=1,common.legend = TRUE)
-ggsave("figsimu2newnoise3.pdf", width = 10, height = 5)
+
+F1<- matrix(c(tabF1),ncol=1,nrow=400,byrow=F)
+model <- rep(colnames(tabF1),each=100)
+data.F1 <- data.frame(F1,model)
+F1plot <- ggplot(data.F1, aes(x=model, y=F1)) + 
+  geom_boxplot(fill="gray")+
+  labs(title=(TeX("noise: $\\sigma=1.5$")),x="")+
+  theme_classic()+ theme(text = element_text(size = 17),axis.text.x = element_text(angle = -90))  
+
+ggarrange(MSEPplot,F1plot, sens.plot,speplot , ncol=4,nrow=1,common.legend = TRUE)
+
+
+ggsave("figsimu2newnoise3_F1.pdf", width = 10, height = 5)
 
 
 load("result_SIMU2new_noise6.Rdata")
